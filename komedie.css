@@ -1,0 +1,239 @@
+* {
+  box-sizing: border-box;
+    
+}
+
+body{
+    background-color:black;
+}
+#kjop {
+  background-color: #4CAF50; 
+  border: none;
+  color: white;
+  padding: 11px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+}
+.column {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  height: 600px; 
+    margin: 23px;
+    border: 5px solid #482426;
+    background-image: url(kino5.jpg);
+    background-size: 100%;
+    
+}
+
+h1{
+    color: #482426;
+    margin-left: 300px;
+    font-family: monospace;
+    font-size: 40px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+h2{
+    font-size: 27px;
+    font-family: monospace;
+    color: #482426;
+    margin-left: 50px;
+   
+}
+
+#wave{
+    height:500px;
+    width: 300px;
+}
+
+
+.film1 {
+        width: 70%;
+        height: 400px;
+        background: url("IMG_2021.jpg") no-repeat;
+        margin: 50px;
+    background-size: 100%;
+    padding: 0px;
+  
+    
+    }
+    .film1:hover {
+        background: url("Skjermbilde%202020-05-20%20kl.%2016.36.19.png") no-repeat;
+        background-size: 95%;
+        transition: .s;
+        
+        
+    }
+
+
+
+.film2 {
+        width: 70%;
+        height: 400px;
+        background: url("IMG_2015.jpg") no-repeat;
+        margin: 50px;
+    background-size: 100%;
+    margin-left: 50px;
+    
+    }
+    .film2:hover {
+        background: url("Skjermbilde%202020-05-23%20kl.%2012.58.03.png") no-repeat;
+        background-size: 100%;
+        transition: .s;
+    }
+
+.film3 {
+        width: 70%;
+        height: 400px;
+        background: url("IMG_2017.jpg") no-repeat;
+        margin: 50px;
+    background-size: 100%;
+    
+    }
+    .film3:hover {
+        background: url("Skjermbilde%202020-05-21%20kl.%2013.21.45.png") no-repeat;
+        background-size: 100%;
+        transition: .s;
+        
+    }
+
+.film4 {
+        width: 70%;
+        height: 400px;
+        background: url("IMG_2075.jpg") no-repeat;
+        margin: 50px;
+    background-size: 100%;
+    
+    }
+    .film4:hover {
+        background: url("Skjermbilde%202020-05-23%20kl.%2013.34.02.png") no-repeat;
+        background-size: 100%;
+        transition: .s;
+    }
+.film5 {
+        width: 70%;
+        height: 400px;
+        background: url("IMG_2165%202.jpg") no-repeat;
+        margin: 50px;
+    background-size: 100%;
+    
+    }
+    .film5:hover {
+        background: url("Skjermbilde%202020-05-23%20kl.%2017.32.56.png") no-repeat;
+        background-size: 100%;
+        transition: .s;
+    }
+.film6 {
+        width: 70%;
+        height: 400px;
+        background: url("IMG_2174%202.jpg") no-repeat;
+        margin: 50px;
+    background-size: 100%;
+    
+    }
+    .film6:hover {
+        background: url("Skjermbilde%202020-05-23%20kl.%2017.48.21.png") no-repeat;
+        background-size: 100%;
+        transition: .s;
+    }
+
+
+
+ul li{
+    float: left;
+    width: 274px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 22px;
+    background-color: black;
+    margin-right: 10px;
+    font-family: monospace;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #482426;
+    border: 2px solid #482426;
+    display: block;
+}
+
+ul li a:hover{
+    background-color: ghostwhite;
+}
+
+ul li ul li{
+    display: none;
+}
+
+ul li:hover ul li{
+    display: block;
+}
+
+ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+h3{
+    margin-left: 50px;
+    font-size: 25px;
+    color: #482426;
+}
+
+p{
+font-size: 25px;
+    font-family: sans-serif;
+  
+    margin-bottom: 20px;
+    color: #482426;
+    
+}
+
+h4{
+    color: #482426;
+    font-family: monospace;
+    font-size: 60px;
+    margin-left: 560px;
+}
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+
+button:hover {
+	animation: bounce 1s;
+    box-shadow: inset 0 0 0 4px #482426;
+}
+
+#trailer {
+  background-color: red; 
+  border: none;
+  color: white;
+  padding: 8px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+
+}
