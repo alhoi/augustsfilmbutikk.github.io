@@ -1,0 +1,135 @@
+<html>
+
+<link href="knapper.css" rel="stylesheet">
+
+
+
+
+<head>
+    <title>Augusts Filmbutikk</title>
+
+</head>
+  
+
+
+
+
+<h1>Velkommen til Augusts Filmbutikk!</h1>
+
+<h2>Fyll inn din informasjon og bestill filmen!</h2>
+    
+    
+   
+    
+    <ul>
+    <li><a href="index.html"><i class="fas fa-house-user"></i>&nbsp;Fortsett å handle</a></li>
+    </ul>
+
+    <br>
+    
+    <br>
+    
+    <br>
+    
+    <h3>Du vil få filmen og faktura tilsendt! Ingen forhåndsbetaling!</h3>
+
+
+
+
+<body>
+    
+   
+
+    <form>
+        <p>
+       
+        <input type="text" id="Navn" placeholder="&nbsp;Ditt navn">
+        </p>
+        <p> 
+             <input type="text" id="Film" placeholder="&nbsp;Navn på film">
+            
+        </p> 
+        <p>
+        <input type="text" id="Adresse" placeholder="&nbsp;Adresse, postnummer">
+            </p>
+        <p>
+            <input type="text" id="Telefonnummer" placeholder="&nbsp;Telefonummer">
+        </p>
+        <p> 
+            <input type="text" id="Epost" placeholder="&nbsp;Epost">
+        </p>
+        
+        <input type="button" value="Bestill!" id="Bestill" onclick="leggInn()">
+
+       
+    </form>
+
+     <div id="navneliste">
+    </div>
+
+    
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-database.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+    apiKey: "AIzaSyD_WXiHONheWO3FUbU85OhtU54DcygRQ8k",
+    authDomain: "filmbutikk.firebaseapp.com",
+    databaseURL: "https://filmbutikk.firebaseio.com",
+    projectId: "filmbutikk",
+    storageBucket: "filmbutikk.appspot.com",
+    messagingSenderId: "190671921081",
+    appId: "1:190671921081:web:6e97f283c6458dc1fbe068"
+  };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+
+        let db = firebase.database();
+
+        var hyttebok = db.ref("Bestillinger");
+        
+        
+           
+        
+        function leggInn() {
+            var navn_in = document.getElementById("Navn").value;
+            var film_in = document.getElementById("Film").value;
+            var adresse_in = document.getElementById("Adresse").value;
+            var telefonnummer_in = document.getElementById("Telefonnummer").value;
+            var epost_in = document.getElementById("Epost").value;
+            
+            
+                
+            
+            
+            
+            
+            
+
+            
+            
+            hyttebok.push({
+                        navn : navn_in, film : film_in, adresse : adresse_in, telefonnummer : telefonnummer_in, epost : epost_in,
+            })
+                window.alert("Takk for din bestilling! Filmen og faktura vil bli sendt innen 3-4 virkedager!");          
+              
+            }
+
+
+    </script>
+
+</body>
+
+
+
+
+
+
+</html>
