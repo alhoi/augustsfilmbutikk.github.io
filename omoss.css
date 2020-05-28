@@ -1,0 +1,126 @@
+
+
+
+
+
+body{
+    background-color: skyblue;
+}
+
+ul li{
+    float: left;
+    width: 19%;
+    height: 42px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 22px;
+    background-color: black;
+    margin-right: 0%;
+    font-family: monospace;
+    
+}
+ul li .undermeny{
+    width: 100%;
+}
+
+ul li a{
+    text-decoration: none;
+    color: darkblue;
+    display: block;
+    border: 2px solid darkblue;
+}
+
+ul li a:hover{
+    background-color: ghostwhite;
+}
+
+ul li ul li{
+    display: none;
+}
+
+ul li:hover ul li{
+    display: block;
+}
+
+ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    
+    
+}
+
+h1{
+    font-size: 70px;
+    font-family: monospace; 
+}
+
+
+
+#transformers{
+    height: 500px;
+    width: 300px;
+    margin-left: 30px;
+}
+
+#hodejegerne{
+    height: 500px;
+    width: 300px;
+}
+
+#kingkong{
+    height: 500px;
+    width: 300px;
+}
+
+
+
+#up2{
+    float: right;
+}
+
+
+h2{
+    font-size: 70px;
+    text-align: center;
+    font-family:cursive;
+}
+
+
+p{
+    margin-left: 70px;
+    font-size: 25px;
+    margin-right: 70px;
+}
+
+h3{
+    font-size: 60px;
+    font-family:cursive;
+    margin-left: 30px;
+}
+
+h4{
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+h5{
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+h6{
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+#leder2{
+    width: 700px;
+    height: 500px;
+    border-radius: 20px;
+}
+
+#leder{
+    height: 500px;
+    width: 400px;
+}
