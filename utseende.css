@@ -1,0 +1,198 @@
+body {
+background: url("food-snack-popcorn-movie-theater-33129.jpg") center / cover no-repeat;
+	
+        justify-content: center;
+}
+
+
+
+ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    
+    
+    
+}
+
+ul li{
+    float: left;
+    width: 20%;
+    height: 42px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 22px;
+    background-color: black;
+    margin-right: 0%;
+    font-family: monospace;
+    background-size: 100%;
+   
+justify-content: center;
+
+    
+}
+ul li .undermeny{
+    width: 100%;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    
+}
+
+ul li a:hover{
+    background-color: salmon;
+    background-size: 100%;
+}
+
+ul li ul li{
+    display: none;
+}
+
+ul li:hover ul li{
+    display: block;
+}
+
+h1{
+    font-size: 50px;
+    color: white;
+    font-family: monospace;
+    display: block;
+    background-color: black;
+    text-align: center;
+}
+
+
+#leder{
+    height: 600px;
+    width: 500px;
+   border-radius: 10px;
+}
+
+h3{
+    margin-left: 30px;
+    font-size: 37px;
+    color: azure;
+}
+
+#leder2{
+    height: 600px;
+    width: 800px;
+    border-radius: 10px;
+}
+
+#naruto{
+    float: right;
+    height: 300px;
+    width: 200px;
+}
+
+#salg{
+    width: 400px;
+    height:250px;
+    
+    
+    
+}
+
+#logo{
+    height: 100px;
+    width: 200px;
+    float: right;
+}
+
+#prosent{
+    height: 300px;
+    width: 200px;
+}
+
+.wrapper{
+    width: 200px;
+    height: 200px;
+    margin: 15% auto;
+}
+
+.box-area{
+    animation: animate 10s ease-in-out infinite;
+    transform-style: preserve-3d;
+    transform-origin: 100px 100px 0;
+}
+
+.box-area div{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+}
+
+.box-area .box1{
+    background-image: url(figur1.jpg);
+    -webkit-background-size:cover;
+    background-size: cover;
+    background-position: center center;
+    transform: translateZ(100px);
+}
+.box-area .box2{
+    background-image: url(figur2.jpg);
+    -webkit-background-size:cover;
+    background-size: cover;
+    background-position: center center;
+    transform: rotateY(90deg) translateZ(100px);
+}
+.box-area .box3{
+    background-image: url(figur3.jpg);
+    -webkit-background-size:cover;
+    background-size: cover;
+    background-position: center center;
+    transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+}
+.box-area .box4{
+    background-image: url(figur4.jpg);
+    -webkit-background-size:cover;
+    background-size: cover;
+    background-position: center center;
+    transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
+}
+.box-area .box5{
+    background-image: url(figur5.jpg);
+    -webkit-background-size:cover;
+    background-size: cover;
+    background-position: center center;
+    transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+}
+.box-area .box6{
+    background-image: url(figur6.jpg);
+    -webkit-background-size:cover;
+    background-size: cover;
+    background-position: center center;
+    transform: rotateX(-90deg) translateZ(100px);
+}
+
+@keyframes animate {
+    
+    
+    from,to{
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+    16%{
+        transform: rotateY(-90deg);
+    }
+    
+    33%{
+        transform: rotateY(-90deg) rotateZ(90deg);
+    }
+    
+    50%{
+        transform: rotateY(-180deg) rotateZ(90deg);
+    }
+    66%{
+        transform: rotateY(-180deg) rotateX(90deg);
+    }
+    
+    83%{
+        transform: rotateX(90deg);
+    }
+}
+
+
