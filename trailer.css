@@ -1,0 +1,62 @@
+body{
+    background-image: url(up.jpg);
+    background-size: cover;
+    font-family: monospace;
+    
+    
+    
+    
+}
+
+ul li{
+    float: left;
+    width: 19%;
+    height: 42px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 22px;
+    background-color: black;
+    margin-right: 0%;
+    font-family: monospace;
+    
+}
+ul li .undermeny{
+    width: 100%;
+}
+
+ul li a{
+    text-decoration: none;
+    color: darkblue;
+    display: block;
+    border: 2px solid darkblue;
+}
+
+ul li a:hover{
+    background-color: ghostwhite;
+}
+
+ul li ul li{
+    display: none;
+}
+
+ul li:hover ul li{
+    display: block;
+}
+
+ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    
+    
+}
+
+h1{
+    font-size: 70px;
+}
+
+
+
+
+
+
